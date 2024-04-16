@@ -3,9 +3,9 @@
     
     // Definição com o Banco de Dados 01
     define('CONEXAO', [
-        'localBancoDados' => 'OLIVER\SQLEXPRESS',
+        'localBancoDados' => 'localhost',
         'nomeBancoDados' => 'contatos',
-        'usuarioBancoDados' => 'teknisa',
+        'usuarioBancoDados' => 'postgres',
         'senhaBancoDados' => 'teknisa',
     ]);
     

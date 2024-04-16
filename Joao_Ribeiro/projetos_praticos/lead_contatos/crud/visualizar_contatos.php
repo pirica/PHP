@@ -14,7 +14,7 @@
 
 
     // Buscando os contatos na base de dados
-    $contatos = $banco_dados->select("SELECT * FROM CLIENTES");
+    $contatos = $banco_dados->select("SELECT * FROM clientes");
 
 ?>
 
@@ -43,10 +43,10 @@
         <tbody>
             <?php foreach($contatos as $contato): ?>
                 <tr>
-                    <td><?= $contato['NOME']?></td>
-                    <td><?= $contato['TELEFONE']?></td>
-                    <td><a href="../crud/editar_contatos.php?id=<?= $contato['ID_CLIENTE'] ?>">Editar</a></td>
-                    <td><a href="../crud/excluir_contatos.php?id=<?= $contato['ID_CLIENTE'] ?>">Excluir</a></td>
+                    <td><?= $contato['nome']?></td>
+                    <td><?= $contato['telefone']?></td>
+                    <td><a href="../crud/editar_contatos.php?id=<?= $contato['user_id'] ?>">Editar</a></td>
+                    <td><a href="../crud/excluir_contatos.php?id=<?= $contato['user_id'] ?>">Excluir</a></td>
                 </tr>
             <?php endforeach ?>
         </tbody>

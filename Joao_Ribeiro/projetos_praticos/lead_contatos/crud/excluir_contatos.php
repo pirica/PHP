@@ -19,10 +19,10 @@
     $banco_dados = new PDOFacil(CONEXAO);
 
     $parametros = [
-        ':ID_CLIENTE' => $id_contato
+        ':user_id' => $id_contato
     ];
 
-    $banco_dados->delete("DELETE FROM CLIENTES WHERE ID_CLIENTE = :ID_CLIENTE", $parametros);
+    $banco_dados->delete("DELETE FROM clientes WHERE user_id = :user_id", $parametros);
 
     }
 

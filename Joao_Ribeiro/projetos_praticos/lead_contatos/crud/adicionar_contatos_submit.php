@@ -22,7 +22,7 @@ use PDOFacil\PDOFacil;
             ':telefone' => $telefone
         ];
 
-        $banco_dados->insert("INSERT INTO CLIENTES VALUES (:nome, :telefone)", $parametros);
+        $banco_dados->insert("INSERT INTO clientes VALUES (:nome, :telefone)", $parametros);
 
         echo 'Contato enviado com sucesso!';
 
